@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Resume Bytes",
+  "description": "A premium AI-powered suite combining an ATS Resume Builder, AI Resume Analyzer \u0026 Corrector, and an ATS Score Checker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

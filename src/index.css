@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* Global Dark Mode input, select, and textarea overrides */
+.dark input[type="text"],
+.dark input[type="email"],
+.dark input[type="password"],
+.dark input[type="url"],
+.dark input[type="tel"],
+.dark input[type="number"],
+.dark textarea,
+.dark select {
+  background-color: rgba(9, 13, 22, 0.75) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+  color: #f8fafc !important;
+}
+
+.dark input[type="text"]:focus,
+.dark input[type="email"]:focus,
+.dark input[type="password"]:focus,
+.dark input[type="url"]:focus,
+.dark input[type="tel"]:focus,
+.dark input[type="number"]:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: rgba(34, 211, 238, 0.4) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #475569 !important;
+}
+
+/* Subtle modern glass container adjustments */
+.dark .glass-input {
+  background-color: rgba(9, 13, 22, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Smooth customized scrollbars for dashboard and lists */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #resume-print-area, #resume-print-area * {
+    visibility: visible;
+  }
+  #resume-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    transform: none !important;
+    border: none !important;
+  }
+  @page {
+    margin: 0;
+  }
+}
